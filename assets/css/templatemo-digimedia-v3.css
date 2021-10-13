@@ -188,11 +188,17 @@ body {
   background-size: cover;
 }
 .card-buttons{
-  position: absolute;
-  display: flex;
-  top: 90%;
+  /* position: absolute; */
+  /* display: flex; */
+  /* top: 90%;
   left: 90%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%); */
+}
+.card-bg{
+  background-color: rgb(255, 255, 255);
+  opacity: 85%;
+  border-radius: 20px;
+  z-index: 0;
 }
 /* .intro::after{
   background-image: url(../images/contact-bottom-right-v3.png);
@@ -344,7 +350,10 @@ video{
 }
 .services .naccs .menu .why-us{
   width: 30% !important;
-  height: 260px;
+  height: 150px;
+  margin: auto 40px;
+  background-color: rgb(255, 247, 234);
+  box-shadow: 0px 0px 15px rgb(247, 231, 208)  !important ;
   /* display: flex !important; */
 }
 
@@ -357,7 +366,7 @@ video::-webkit-media-controls {
 }
   .services .naccs .menu .why-us{
     width: 100% !important;
-    height: 100px;
+    height: 110px;
   }
 }
 
@@ -1365,7 +1374,7 @@ Services Style
 */
 
 .services {
-  padding-top: 130px;
+  padding-top: 40px;
   position: relative;
 }
 
@@ -1395,7 +1404,7 @@ Services Style
 
 .services .section-heading {
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 30px;
 }
 
 .services .section-heading .line-dec {
@@ -1492,7 +1501,7 @@ Services Style
 }
 
 .services ul.nacc li .right-image img {
-  max-width: 420px;
+  /* max-width: 420px; */
   float: right;
 }
 
@@ -1974,7 +1983,7 @@ form#contact #map iframe {
 }
 
 .fill-form {
-  padding: 80px 60px 80px 30px;
+  padding: 80px 40px;
 }
 
 .fill-form .info-post {
@@ -2213,7 +2222,7 @@ responsive
     margin: 0px;
   }
   .services ul.nacc li.active {
-    padding: 45px;
+    padding: 10px;
   }
   .services .naccs .menu div  {
     font-size: 0px;
