@@ -258,7 +258,14 @@ video{
   0%{transform: rotateY(360deg)}
   100%{transform: rotateY(0deg)}
 }
-
+.nav li a {
+  font-weight: 700 ;
+}
+@media (max-width:1024){
+  .nav .scroll-to-section a {
+    font-size: 5px !important;
+  }
+}
 @media (max-width: 991px) {
   html, body {
     overflow-x: hidden;
@@ -340,6 +347,10 @@ video{
   height: 260px;
   /* display: flex !important; */
 }
+
+video::-webkit-media-controls {
+  display:none !important;
+}
 @media (max-width: 575px){
   .services .naccs .menu .why-us div{
     font-size: 12px !important;
@@ -357,7 +368,7 @@ header
 */
 
 .pre-header {
-  background-color: #efefef;
+  /* background-color: #efefef; */
   /* height: 60px; */
   padding: 15px 0px;
 }
@@ -381,12 +392,16 @@ header
 }
 
 .pre-header ul.info li a i {
-  font-size: 18px;
+  font-size: 25px;
   margin-right: 8px;
 }
 
 .pre-header ul.social-media {
   text-align: center;
+}
+.pre-header ul.social-media i{
+  font-size: 21px;
+  margin-top: 5px;
 }
 
 .pre-header ul.social-media li {
@@ -394,8 +409,8 @@ header
 }
 
 .pre-header ul.social-media li a {
-  background-color: #4474db;
-  box-shadow: 2px 2px 2px black;
+  background-color: #899fcf;
+  /* box-shadow: 0.2px 0.5px 1px black; */
   color: #fff;
   display: inline-block;
   width: 30px;
@@ -533,7 +548,7 @@ header
 .header-area .main-nav .nav li a {
   display: block;
   font-weight: 500;
-  font-size: 13px;
+  font-size: 11px;
   padding-top: 3px;
   color: #2a2a2a;
   text-transform: capitalize;
