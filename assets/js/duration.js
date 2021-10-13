@@ -19,7 +19,7 @@
       
       if(timer.total < 1){ 
         clearInterval(timerInterval);
-        clock.innerHTML = "Deadline is over";
+        clock.innerHTML = '<div class="fs-2" style="color:#3B566E;">Deadline is over</div>';
       }else{
 
       // clock.innerHTML = "<span>timer.days</span>"
@@ -28,10 +28,10 @@
       //                 + '' + timer.minutes + ''
       //                 + '' + timer.seconds + '';
 
-      clock.innerHTML= '<span style="color:#3B566E;">'+timer.days+
-                        '</span><span style="color:#3B566E;">'+ timer.hours +
-                        '</span><span style="color:#3B566E;">'+timer.minutes+
-                        '</span><span style="color:#3B566E;">'+timer.seconds+'</span>'
+      clock.innerHTML= '<div><span class="fs-1" style="color:#3B566E;">'+timer.days+
+                        '</span><span class="fs-1" style="color:#3B566E;">'+ timer.hours +
+                        '</span><span class="fs-1" style="color:#3B566E;">'+timer.minutes+
+                        '</span><span class="fs-1" style="color:#3B566E;">'+timer.seconds+'</span></div>'
   
       var spans = clock.getElementsByTagName("time");
       animateClock(spans[3]);
@@ -51,6 +51,6 @@
   }
 
   window.onload = function(){ 
-    var deadline = new Date("October 14, 2021 9:27:00"); 
+    var deadline = new Date("October 16, 2021 8:27:00"); 
     startTimer("clock", deadline);
   };
