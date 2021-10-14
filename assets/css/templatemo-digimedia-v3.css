@@ -1570,6 +1570,9 @@ Free Quote
   position: relative;
   z-index: 2;
   margin-top: 130px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 .free-quote .section-heading {
@@ -2095,7 +2098,6 @@ footer {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: 250px;
   /* bottom: 0; */
   /* height: 40vh; */
   /* z-index: 99; */
@@ -2204,6 +2206,14 @@ responsive
     padding: 45px;
   }
 }
+.free-quote{
+  height: 65vh;
+}
+@media (max-width:995px){
+  .free-quote{
+    height: 100vh;
+  }
+}
 
 @media (max-width: 767px) {
   .header-area .main-nav .logo h4 {
@@ -2263,8 +2273,8 @@ responsive
   }
   .free-quote form button {
     margin-left: 0px;
-    border-bottom-left-radius: 40px;
-    border-top-right-radius: 0px;
+    border-radius: 40px;
+    /* border-top-right-radius: 0px; */
   }
   .blog-posts {
     margin-left: 0px;
