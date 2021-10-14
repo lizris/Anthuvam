@@ -194,6 +194,9 @@ body {
   left: 90%;
   transform: translate(-50%,-50%); */
 }
+.topper{
+  height: 15vh;
+}
 .card-bg{
   background-color: rgb(255, 255, 255);
   opacity: 85%;
@@ -352,8 +355,8 @@ video{
   width: 30% !important;
   height: 150px;
   margin: auto 40px;
-  background-color: rgb(255, 247, 234);
-  box-shadow: 0px 0px 15px rgb(247, 231, 208)  !important ;
+  background-color: rgb(255, 255, 255) !important;
+  box-shadow: 0px 0px 15px rgb(253, 235, 210)  !important ;
   /* display: flex !important; */
 }
 
@@ -2090,7 +2093,10 @@ footer {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: 130px;
+  margin-top: 250px;
+  /* bottom: 0; */
+  /* height: 40vh; */
+  /* z-index: 99; */
 }
 
 footer p {
@@ -2121,7 +2127,12 @@ responsive
   .header-area .main-nav .nav li:last-child {
     padding-left: 20px;
   }
+  .services .naccs .menu .menulist{
+    font-size: 13px ;
+    font-weight: 900;
+  } 
 }
+
 
 @media (max-width: 992px) {
   form#contact {
@@ -2158,8 +2169,8 @@ responsive
     margin-right: 0px;
     margin-bottom: 45px;;
   }
-  .services .naccs .menu div {
-    font-size: 15px;
+  .services .naccs .menu div .menulist{
+    font-size: 15px ;
     font-weight: 500;
   }
   .service-item {
@@ -2224,7 +2235,7 @@ responsive
   .services ul.nacc li.active {
     padding: 10px;
   }
-  .services .naccs .menu div  {
+  .services .naccs .menu div .menulist {
     font-size: 0px;
   }
   .services ul.nacc li .right-image img {
