@@ -51,6 +51,6 @@
   }
 
   window.onload = function(){ 
-    var deadline = new Date("October 16, 2021 8:27:00"); 
+    var deadline = new Date("November 1, 2021 23:59:00"); 
     startTimer("clock", deadline);
   };
