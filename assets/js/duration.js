@@ -19,7 +19,7 @@
       
       if(timer.total < 1){ 
         clearInterval(timerInterval);
-        clock.innerHTML = '<div class="fs-2" style="color:#3B566E;">Deadline is over</div>';
+        clock.innerHTML = '<div class="fs-3 mt-3" style="color:#3B566E;height:100px;marginTop:30px">இறுதிக்காலம் முடிந்தது</div>';
       }else{
 
       // clock.innerHTML = "<span>timer.days</span>"
